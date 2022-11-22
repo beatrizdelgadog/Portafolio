@@ -20,95 +20,291 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">BMDG</a>
+                <a class="navbar-brand" href="#page-top"><b>BMDG</b></a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portafolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Acerca de mi</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contacto</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about"><b>Herramientas</b></a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio"><b>Proyectos</b></a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#service"><b>Servicios</b></a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact"><b>Contacto</b></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
+        <header class="masthead bg-primary text-white text-center" style="height: 100vh">
             <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/perfil.png" alt="..." />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Beatriz Delgado Guerrero</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+                <div class="row d-flex align-items-stretch">
+                    <div class="col-md-12 col-lg-5 banner-section d-none d-md-flex align-items-stretch justify-content-center">
+                        <div class="slide-content bg-1"> 
+
+                            <img class="masthead-avatar mb-5" src="assets/img/Recurso 1.png" style="width: 50rem;"alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-7 h-100">
+                        <div class="auto-form-wrapper d-flex align-items-center justify-content-center flex-column"> 
+                            <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile" style="color: #141c3a;">Analista QA y Desarrolladora</h1>
+                            <img class="masthead-avatar mb-5" src="assets/img/perfil2.jpg" alt="..." />
+                            <!-- Masthead Heading-->
+                            <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile" style="color: #141c3a;">Beatriz Delgado Guerrero</h1>
+                            <!-- Icon Divider-->
+                            <!-- Masthead Subheading-->
+                            <p class="masthead-subheading font-weight-light mb-0" style="color: black">Ingeniera en Sistemas Computacionales</p>
+                            <!-- <div class="divider-custom divider-light">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div> -->
+                            <p style="color: black">Hola! Soy Beatriz, un gusto en conocerte<br>
+                                Mi aventura como Analista QA y Desarrolladora inició desde que me gradué de la “Universidad de Guayaquil” hace unos 6 años, desde ese entonces he participado en distintos proyectos web para distintas empresas de manera remota, compartiendo con personas muy talentosas y aprendiendo de ellas. Soy curiosa y eso lo aprovecho para poder aprender nuevas cosas y mejorar mis habilidades, amante de los animales y de la gastronomía. 
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Ingeniera en Sistemas Computacionales</p>
             </div>
         </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-
-                
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portafolio</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <div><p class="text-center">Les presento los proyectos en los que he participado, 
-                    implementando nuevas funcionalidades y dando soporte a funcionalidades ya existentes.</p><br></div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    @yield('content')
-                    
-                </div>
-            </div>
-        </section>
         <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
+        <section class="page-section bg-primary" id="about" style="height: 100vh">
+            
+        <div class="feat bg-gray pt-5 pb-5">
             <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Acerca de mi</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+            <div class="row">
+                <div class="section-head col-sm-12">
+                    <h4><span>Servi</span>cios <span>y Herramien</span>tas</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's<br>standard dummy text ever since the 1500s, when an unknown book.</p>
                 </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item"> <span class="icon feature_box_col_two"><i class="fa-solid fa-list-check"></i></span>
+                        <h6>QA</h6>
+                        <p>Servicios como QA (Analista de calidad del software).</p>
+                        <h6>Herramientas</h6>
+                        <p>GitHub <br>GitLab</p>
+                    </div>
                 </div>
-                <!-- About Section Button-->
-                <!-- <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
-                    </a>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-globe"></i></span>
+                        <h6>Desarrolladora</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
+                        <h6>Herramientas</h6>
+                        <p>PHP <br>JavaScript <br>Laravel</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item"> <span class="icon feature_box_col_four"><i class="fa fa-database"></i></span>
+                        <h6>Business Growth</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
+                        <h6>Herramientas</h6>
+                        <p>MySQL Workbench <br>phpMyAdmin <br>Oracle SQL Developer</p>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 col-sm-6">
+                <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-hourglass-half"></i></span>
+                    <h6>Your Photoshoping</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
+                </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                <div class="item"> <span class="icon feature_box_col_five"><i class="fa fa-upload"></i></span>
+                    <h6>Market Strategy</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
+                </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                <div class="item"> <span class="icon feature_box_col_six"><i class="fa fa-camera"></i></span>
+                    <h6>Retina Ready</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
+                </div>
                 </div> -->
             </div>
+            </div>
+        </div>
+
+            <!-- <h1  class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile" style="color: #141c3a;">Herramientas</h1>
+            <br>
+            <h4>Lenguajes, Frameworks y Herramientas</h4><br>
+            <div class="flip">
+                <div class="front" style="background-image: url(https://www.alexmedina.net/wp-content/uploads/2019/12/javascript.png)">
+                <h1 class="text-shadow">JavaScript</hi>
+                </div>
+                <div class="back">
+                <h2>JavaScript</h2>
+                <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                </div>
+            </div>
+            <div class="flip">
+                <div class="front" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png)">
+                <h1 class="text-shadow">PHP</hi>
+                </div>
+                <div class="back">
+                <h2>PHP</h2>
+                <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="flip">
+                <div class="front" style="background-image: url(https://s3-eu-west-1.amazonaws.com/bucketeer-688d8e11-8fc6-459f-bb52-26fd21452913/2020/03/AcA2LnWL_400x400.jpg)">
+                <h1 class="text-shadow">Laravel</hi>
+                </div>
+                <div class="back">
+                <h2>Laravel</h2>
+                <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                </div>
+            </div>
+            <div class="flip">
+                <div class="front" style="background-image: url(https://inscripciones.utnso.com.ar/images/github-round.png)">
+                <h1 class="text-shadow">GitHub</hi>
+                </div>
+                <div class="back">
+                <h2>GitHub</h2>
+                <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                </div>
+            </div> -->
+
+            <!-- vertical -->
+            
+            <!-- <h4>Vertical Flip</h4>
+            <div class="flip flip-vertical">
+                <div class="front" style="background-image: url(https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+                <h1 class="text-shadow">FOREST</hi>
+                </div>
+                <div class="back">
+                <h2>Angular</h2>
+                <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                </div>
+            </div>
+            <div class="flip flip-vertical">
+                <div class="front" style="background-image: url(https://images.pexels.com/photos/34950/pexels-photo.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+                <h1 class="text-shadow">TRACK</hi>
+                </div>
+                <div class="back">
+                <h2>Angular</h2>
+                <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                </div>
+            </div>
+            <div class="flip flip-vertical">
+                <div class="front" style="background-image: url(https://images.pexels.com/photos/34546/sunset-lake-landscape-summer.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+                <h1 class="text-shadow">SWAMP</hi>
+                </div>
+                <div class="back">
+                <h2>Angular</h2>
+                <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                </div>
+            </div> -->
         </section>
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio" style="height: 100vh; background-color : white">
+            <div class="feat bg-gray pt-5 pb-5">
+                <div class="container">
+                <div class="row">
+                    <div class="section-head col-sm-12">
+                        <h4><span>Proyec</span>tos</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's<br>standard dummy text ever since the 1500s, when an unknown book.</p>
+                    </div>
+                    <!-- Portfolio Grid Items-->
+                    <div class="row justify-content-center">
+                        @yield('content')
+                        
+                    </div>
+                    
+                </div>
+                </div>
+                </div>
+        </section>
+        
+        <section class="c-section" id="service">
+        <div class="feat bg-gray pt-5 pb-5">
             <div class="container">
+                <div class="row">
+                    <div class="section-head col-sm-12">
+                    <h4><span>Experien</span>cia</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's<br>standard dummy text ever since the 1500s, when an unknown book.</p>
+                    </div>
+                    <div class="row d-flex align-items-stretch">
+                        <div class="col-md-12 col-lg-5 banner-section d-none d-md-flex align-items-stretch justify-content-center">
+                            <div class="slide-content bg-1"> 
+                                <div class="timeline">
+                                    <ul>
+                                        <li>
+                                            <div class="content">
+                                            <h3>What is Lorem Ipsum?</h3>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                            </div>
+                                            <div class="time">
+                                            <h4>March 2018</h4>
+                                            </div>
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="content">
+                                            <h3>What is Lorem Ipsum?</h3>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                            </div>
+                                            <div class="time">
+                                            <h4>April 2018</h4>
+                                            </div>
+                                        </li>
+                                        
+                                        <div style="clear:both;"></div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-7 h-100">
+                            <div class="auto-form-wrapper d-flex align-items-center justify-content-center flex-column"> 
+                                <div class="slide-content bg-1"> 
+                                    <div class="timeline">
+                                        <ul>
+                                            <li>
+                                                <div class="content">
+                                                <h3>What is Lorem Ipsum?</h3>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                </div>
+                                                <div class="time">
+                                                <h4>March 2018</h4>
+                                                </div>
+                                            </li>
+                                            
+                                            <li>
+                                                <div class="content">
+                                                <h3>What is Lorem Ipsum?</h3>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                </div>
+                                                <div class="time">
+                                                <h4>April 2018</h4>
+                                                </div>
+                                            </li>
+                                            
+                                            <div style="clear:both;"></div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        
+        <!-- Contact Section-->
+        <section class="c-section" id="contact" style="height: 100vh">
+            <h2 class="c-section__title2"><span>Contactame</span></h2>
+            <div class="container">
+            <!-- <ul class="c-services"> -->
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contactame</h2>
+                <!-- <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contactame</h2> -->
+                <!-- <h2><span>Servicios</span></h2> -->
                 <!-- Icon Divider-->
-                <div class="divider-custom">
+                <!-- <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
-                </div>
+                </div> -->
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
@@ -168,44 +364,55 @@
                     </div>
                 </div>
             </div>
+            <!-- </ul> -->
         </section>
         <!-- Footer-->
-        <footer class="footer text-center">
+        <footer class="footer">
             <div class="container">
                 <div class="row">
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <!-- <h4 class="text-uppercase mb-4  text-center">Contacto</h4>
+                        <div class="col-lg-10 ms-auto">
+                            <p><i class="fa-regular fa-envelope"></i> <a itemprop="email" href="mailto:beatriz-melanie7@hotmail.com">beatriz-melanie7@hotmail.com</a></p>
+                            <p><i class="fas fa-phone fa-fw"></i> <a itemprop="telephone" href="tel:0981454338"> 098 145 4338</a></p>
+                            <p><i class="fa-sharp fa-solid fa-file-pdf"></i><a href="assets/CV - Beatriz Delgado Guerrero.pdf"> CV</a></p>
+                        </div> -->
+                        <!-- <h4 class="text-uppercase mb-4">Location</h4>
                         <p class="lead mb-0">
                             2215 John Daniel Drive
                             <br />
                             Clark, MO 65243
-                        </p>
+                        </p> -->
                     </div>
                     <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/beatriz.delgado.19"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/BeatrizMelanie7"><i class="fab fa-fw fa-twitter"></i></a>
+                    <div class="col-lg-4 mb-5 mb-lg-0  text-center">
+                        <h4 class="text-uppercase mb-4">Al rededor de la Web</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/beatrizdelgadog"><i class="fab fa-fw fa-github"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/beatriz-melanie-delgado-guerrero-3b057323a/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/BeatrizMelanie7"><i class="fab fa-fw fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/beatrizmdg19/"><i class="fab fa-fw fa-instagram"></i></a>
                     </div>
                     <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
+                    <!-- <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4  text-center">Servicios</h4>
+                        <p class="col-lg-10 ms-auto"><i class="fa-solid fa-angles-right"></i>
+                        Diseño de páginas web.
                         </p>
+                        <p class="col-lg-10 ms-auto"><i class="fa-solid fa-angles-right"></i>
+                            Desarrollo web.
+                        </p>
+                        <p class="col-lg-10 ms-auto"><i class="fa-solid fa-angles-right"></i>
+                            Mantenimiento web.
+                        </p>
+                    </div> -->
+                    <!-- Copyright Section-->
+                    <div class="copyright py-4 text-center text-white">
+                        <div class="container"><small>Copyright &copy; Your Website 2022</small></div>
                     </div>
                 </div>
             </div>
         </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2022</small></div>
-        </div>
         <!-- Portfolio Modals-->
         
         <!-- Bootstrap core JS-->
@@ -219,3 +426,91 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
+
+<!-- <style>
+    @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+    * {
+    box-sizing: border-box;
+    font-weight: normal;
+    }
+
+    body {
+    color: #555;
+    background: white;
+    text-align: center;
+    font-family: "Roboto Mono";
+    }
+
+    h1 {
+    font-size: 2.2em;
+    }
+
+    .flip {
+    position: relative;
+    }
+    .flip > .front,
+    .flip > .back {
+    display: block;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 0.5s;
+    transition-property: transform, opacity;
+    }
+    .flip > .front {
+    transform: rotateY(0deg);
+    }
+    .flip > .back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+    }
+    .flip:hover > .front {
+    transform: rotateY(180deg);
+    }
+    .flip:hover > .back {
+    opacity: 1;
+    transform: rotateY(0deg);
+    }
+    .flip.flip-vertical > .back {
+    transform: rotateX(-180deg);
+    }
+    .flip.flip-vertical:hover > .front {
+    transform: rotateX(180deg);
+    }
+    .flip.flip-vertical:hover > .back {
+    transform: rotateX(0deg);
+    }
+
+    .flip {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 400px;
+    }
+    .flip > .front,
+    .flip > .back {
+    display: block;
+    color: white;
+    width: inherit;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 300px;
+    padding: 1em 2em;
+    background: #313131;
+    border-radius: 10px;
+    }
+    .flip > .front p,
+    .flip > .back p {
+    font-size: 0.9125rem;
+    line-height: 160%;
+    color: #999;
+    }
+
+    .text-shadow {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+    }
+</style> -->

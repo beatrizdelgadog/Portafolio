@@ -1,240 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Portafolio BMDG</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/BMDG.png" />
-        <style>
-            :root{
-                --primary-color: #0C54FF;
-            }
-        </style>
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css?v=1.1" rel="stylesheet" />
-        <link href="css/banner.css" rel="stylesheet" />
-        <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    </head>
-    <body id="page-top">
 
-        @include('layouts.components.preloader')
-        <!-- Navigation-->
-        @include('layouts.components.navbar')
-        
-        <!-- Masthead-->
-        {{-- Banner --}}
-        @include('layouts.components.banner')
-        @include('layouts.components.skill')
-       
-        
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio" style="height: 100vh; background-color : white">
-            <div class="feat bg-gray pt-5 pb-5">
-                <div class="container">
-                <div class="row">
-                    <div class="section-head col-sm-12">
-                        <h4><span>Proyec</span>tos</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's<br>standard dummy text ever since the 1500s, when an unknown book.</p>
-                    </div>
-                    <!-- Portfolio Grid Items-->
-                    <div class="row justify-content-center">
-                        @yield('content')
-                        
-                    </div>
-                    
-                </div>
-                </div>
-                </div>
-        </section>
-        
-        <section class="c-section" id="service">
-        <div class="feat bg-gray pt-5 pb-5">
-            <div class="container">
-                <div class="row">
-                    <div class="section-head col-sm-12">
-                    <h4><span>Experien</span>cia</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's<br>standard dummy text ever since the 1500s, when an unknown book.</p>
-                    </div>
-                    <div class="row d-flex align-items-stretch">
-                        <div class="col-md-12 col-lg-5 banner-section d-none d-md-flex align-items-stretch justify-content-center">
-                            <div class="slide-content bg-1"> 
-                                <div class="timeline">
-                                    <ul>
-                                        <li>
-                                            <div class="content">
-                                            <h3>What is Lorem Ipsum?</h3>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                                            </div>
-                                            <div class="time">
-                                            <h4>March 2018</h4>
-                                            </div>
-                                        </li>
-                                        
-                                        <li>
-                                            <div class="content">
-                                            <h3>What is Lorem Ipsum?</h3>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                                            </div>
-                                            <div class="time">
-                                            <h4>April 2018</h4>
-                                            </div>
-                                        </li>
-                                        
-                                        <div style="clear:both;"></div>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-7 h-100">
-                            <div class="auto-form-wrapper d-flex align-items-center justify-content-center flex-column"> 
-                                <div class="slide-content bg-1"> 
-                                    <div class="timeline">
-                                        <ul>
-                                            <li>
-                                                <div class="content">
-                                                <h3>What is Lorem Ipsum?</h3>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                                                </div>
-                                                <div class="time">
-                                                <h4>March 2018</h4>
-                                                </div>
-                                            </li>
-                                            
-                                            <li>
-                                                <div class="content">
-                                                <h3>What is Lorem Ipsum?</h3>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                                                </div>
-                                                <div class="time">
-                                                <h4>April 2018</h4>
-                                                </div>
-                                            </li>
-                                            
-                                            <div style="clear:both;"></div>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section>
-        
-        <!-- Contact Section-->
-        <section class="c-section" id="contact" style="height: 100vh">
-            <h2 class="c-section__title2"><span>Contactame</span></h2>
-            <div class="container">
-            <!-- <ul class="c-services"> -->
-                <!-- Contact Section Heading-->
-                <!-- <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contactame</h2> -->
-                <!-- <h2><span>Servicios</span></h2> -->
-                <!-- Icon Divider-->
-                <!-- <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div> -->
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Nombres</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Número de contacto</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Mensaje</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Enviar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <!-- </ul> -->
-        </section>
-        <!-- Footer-->
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <!-- <h4 class="text-uppercase mb-4  text-center">Contacto</h4>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Portafolio BMDG</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/BMDG.png" />
+    <style>
+        :root {
+            --primary-color: #0C54FF;
+        }
+    </style>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css?v=1.1" rel="stylesheet" />
+    <link href="css/banner.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    {{-- <link rel="stylesheet" href="{{ asset('css/button-contact.css')}}"> --}}
+</head>
+
+<body id="page-top">
+
+    @include('layouts.components.preloader')
+    <!-- Navigation-->
+    @include('layouts.components.navbar')
+    @yield('content')
+
+
+    <!-- Masthead-->
+    
+    <!-- Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <!-- <h4 class="text-uppercase mb-4  text-center">Contacto</h4>
                         <div class="col-lg-10 ms-auto">
                             <p><i class="fa-regular fa-envelope"></i> <a itemprop="email" href="mailto:beatriz-melanie7@hotmail.com">beatriz-melanie7@hotmail.com</a></p>
                             <p><i class="fas fa-phone fa-fw"></i> <a itemprop="telephone" href="tel:0981454338"> 098 145 4338</a></p>
                             <p><i class="fa-sharp fa-solid fa-file-pdf"></i><a href="assets/CV - Beatriz Delgado Guerrero.pdf"> CV</a></p>
                         </div> -->
-                        <!-- <h4 class="text-uppercase mb-4">Location</h4>
+                    <!-- <h4 class="text-uppercase mb-4">Location</h4>
                         <p class="lead mb-0">
                             2215 John Daniel Drive
                             <br />
                             Clark, MO 65243
                         </p> -->
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="mt-2 col-lg-4 mb-5 mb-lg-0  text-center">
+                    <h4 class="text-uppercase mb-4">Al rededor de la Web</h4>
+                    <div class="social-icon">
+                        <a target="_blank" class="" href="{{ config('myapp.links.github')}}">
+                            <i class="fab fa-fw fa-github"></i>
+                        </a>
+                        <a target="_blank" class="" href="{{ config('myapp.links.linkedin')}}">
+                            <i class="fab fa-fw fa-linkedin-in"></i>
+                        </a>
+                        <a target="_blank" class="" href="{{ config('myapp.links.twitter')}}">
+                            <i class="fab fa-fw fa-twitter"></i>
+                        </a>
+                        <a target="_blank" class="" href="{{ config('myapp.links.instagram')}}">
+                            <i class="fab fa-fw fa-instagram"></i>
+                        </a>
                     </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0  text-center">
-                        <h4 class="text-uppercase mb-4">Al rededor de la Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/beatrizdelgadog"><i class="fab fa-fw fa-github"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/beatriz-melanie-delgado-guerrero-3b057323a/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/BeatrizMelanie7"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/beatrizmdg19/"><i class="fab fa-fw fa-instagram"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <!-- <div class="col-lg-4">
+                </div>
+                <!-- Footer About Text-->
+                <!-- <div class="col-lg-4">
                         <h4 class="text-uppercase mb-4  text-center">Servicios</h4>
                         <p class="col-lg-10 ms-auto"><i class="fa-solid fa-angles-right"></i>
                         Diseño de páginas web.
@@ -246,34 +88,38 @@
                             Mantenimiento web.
                         </p>
                     </div> -->
-                    <!-- Copyright Section-->
-                    <div class="copyright py-4 text-center text-white">
-                        <div class="container"><small>Copyright &copy; Your Website 2022</small></div>
-                    </div>
+                <!-- Copyright Section-->
+                <div class="copyright py-4 text-center text-white">
+                    <div class="container"><small>Copyright &copy; BeatrizDG {{ date('Y')}}</small></div>
                 </div>
             </div>
-        </footer>
-        <!-- Portfolio Modals-->
-        
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        </div>
+    </footer>
+    <!-- Portfolio Modals-->
 
-        {{-- TEXT ROTATE --}}
-        <script src="{{ asset('js/components/navbar.js')}}"></script>
-        <script src="{{ asset('js/components/text-rotate.js')}}"></script>
-        <script>
-            $(document).ready(function(){
-                $("#preloader").fadeOut();
-            });
-        </script>
-    </body>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    {{-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> --}}
+    <script src="{{ asset('js/plugin/bootstrap-notify/bootstrap-notify.min.js') }}"></script>
+
+    {{-- TEXT ROTATE --}}
+    <script src="{{ asset('js/components/navbar.js') }}"></script>
+    <script src="{{ asset('js/components/text-rotate.js') }}"></script>
+    <script src="{{ asset('js/components/easy-ajax.js') }}"></script>
+    {{-- <script src="{{ asset('js/components/send-animation.js') }}"></script> --}}
+    <script>
+        $(document).ready(function() {
+            $("#preloader").fadeOut();
+        });
+    </script>
+</body>
+
 </html>
 
 <!-- <style>

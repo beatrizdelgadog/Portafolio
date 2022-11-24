@@ -122,7 +122,9 @@ return [
     'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',
-
+    'emails'    => [
+        'send'  => env('MAIL_FROM_ADDRESS')
+    ],
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
@@ -174,6 +176,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\HelperServiceProvider::class,
 
     ],
 

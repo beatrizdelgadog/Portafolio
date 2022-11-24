@@ -51,6 +51,6 @@ window.onload = function() {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid var(--primary-color) }";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #21a67b }";
     document.body.appendChild(css);
 };

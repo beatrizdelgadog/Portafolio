@@ -13,7 +13,7 @@ use App\Http\Controllers\ProyectoController;
 |
 */
 
-Route::get('/',[App\Http\Controllers\PortafolioController::class, 'index'] );
+Route::get('/', [App\Http\Controllers\PortafolioController::class, 'index']);
 
 Auth::routes();
 
@@ -28,3 +28,4 @@ Route::resource('/proyectos', App\Http\Controllers\ProyectoController::class); /
 // Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('contact/send', [App\Http\Controllers\PortafolioController::class, 'sendEmail'])->name('contact.send');

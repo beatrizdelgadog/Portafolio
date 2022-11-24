@@ -4,7 +4,7 @@
             <div class="col-md-6 col-12 col-xl-7">
                 <div class="animate__animated animate__fadeIn">
                     <h1>@lang('app.front.headers.hello') 
-                        <span class="txt-rotate" dataPeriod="1000" data-rotate='[ "Ingeniera en sistemas", "Dev Web", "Analista QA" ]'></span>
+                        <span style="color: #21a67b;" class="txt-rotate" dataPeriod="1000" data-rotate='[ "Ingeniera en sistemas", "Dev Web", "Analista QA" ]'></span>
                     </h1>
                     <p>@lang('app.front.headers.description')</p>
                     <a class="button-a" href="#portfolio">¡Esto puede interesarte! <i class="fa-solid fa-circle-arrow-down"></i></a>
@@ -13,7 +13,8 @@
             <div class="col-md-6 col-12 col-xl-5">
                 <div>
                     <div class="animate__animated animate__zoomIn">
-                        <img src="{{ asset('assets/img/Recurso 1.png') }}" alt="Header Img" />
+                        <img src="{{ asset('assets/img/banner-image.png') }}" alt="Banner Image" />
+                        {{-- <a href="https://www.freepik.es/vector-gratis/ilustracion-concepto-programacion_7118756.htm#from_view=detail_author">Imagen de storyset</a> en Freepik --}}
                     </div>
                 </div>
             </div>

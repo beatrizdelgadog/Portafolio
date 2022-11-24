@@ -3,19 +3,55 @@
         <div class="row aligh-items-center">
             <div class="col-md-6 col-12 col-xl-7">
                 <div class="animate__animated animate__fadeIn">
-                    <h1>@lang('app.front.headers.hello') 
-                        <span style="color: #21a67b;" class="txt-rotate" dataPeriod="1000" data-rotate='[ "Ingeniera en sistemas", "Dev Web", "Analista QA" ]'></span>
-                    </h1>
-                    <p>@lang('app.front.headers.description')</p>
-                    <a class="button-a" href="#portfolio">¡Esto puede interesarte! <i class="fa-solid fa-circle-arrow-down"></i></a>
+                    <h1 style="font-size: 16px;">@lang('app.front.headers.hello') </h1>
+                    <p style="font-size: 3em;font-weight: bold">
+                        <span>Soy </span> <span style="color: #21a67b;" class="txt-rotate" dataPeriod="1000"
+                            data-rotate='[ "Ingeniera en sistemas", "Dev Web", "Analista QA" ]'></span>
+                    </p>
+                    <p>Guayaquil, Ecuador <img style="width: 25px" src="{{ asset('assets/front/flag_of_ecuador.svg') }}"
+                            alt=""></p>
+                    <a class="button-a" href="#portfolio">¡Esto puede interesarte! <i
+                            class="fa-solid fa-circle-arrow-down"></i></a>
                 </div>
             </div>
             <div class="col-md-6 col-12 col-xl-5">
                 <div>
                     <div class="animate__animated animate__zoomIn">
-                        <img src="{{ asset('assets/img/banner-image.png') }}" alt="Banner Image" />
+                        <img class="animate-moved" src="{{ asset('assets/img/banner-image.png') }}"
+                            alt="Banner Image" />
                         {{-- <a href="https://www.freepik.es/vector-gratis/ilustracion-concepto-programacion_7118756.htm#from_view=detail_author">Imagen de storyset</a> en Freepik --}}
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container" style="min-height: 100vh">
+    <div class="row">
+        <div class="col-md-6 col-12">
+            <div class="row">
+                <div class="col-8 col-md-10" style="margin: 0 auto">
+                    <img style="max-width: 100%;" src="{{ asset('assets/img/me_personal.png') }}" alt="Mi portafolio">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12 m-auto">
+            <div>
+                <h3 style="font-size: 2.5em" class="text-center mb-3">@lang('app.front.headers.related_me')</h3>
+                <p class=" ">@lang('app.front.headers.description')</p>
+            </div>
+            <div class="row mt-5" style="border-bottom: 2px solid #fff">
+                <div class="p-0 text-left col-4 border-card-c">
+                    {{-- <p class="text-center">Empecé</p> --}}
+                    <i style="margin-left: 10px" class="fa-solid fa-play"></i>
+                    <p class="">{{ config('myapp.info.experience.start') }}</p>
+                </div>
+                <div class="p-0 col-4 border-card-c" style="transform: scaleX(-1);">
+                    @include('layouts.components.others.dots')
+                </div>
+                <div class="p-0 col-4 border-card-c text-right">
+                    <i style="font-size: 2em; margin-right: 10px" class="fa-solid fa-flag-checkered"></i>
+                    <p class="text-right">{{ config('myapp.info.experience.end') }}</p>
                 </div>
             </div>
         </div>

@@ -25,6 +25,7 @@
     <link href="css/banner.css" rel="stylesheet" />
     <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="{{ asset('css/runnng.css')}}">
     {{-- <link rel="stylesheet" href="{{ asset('css/button-contact.css')}}"> --}}
 </head>
 
@@ -112,7 +113,7 @@
     <script src="{{ asset('js/components/navbar.js') }}"></script>
     <script src="{{ asset('js/components/text-rotate.js') }}"></script>
     <script src="{{ asset('js/components/easy-ajax.js') }}"></script>
-    {{-- <script src="{{ asset('js/components/send-animation.js') }}"></script> --}}
+    <script src="{{ asset('js/components/running.js') }}"></script>
     <script>
         $(document).ready(function() {
             $("#preloader").fadeOut();

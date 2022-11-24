@@ -15,6 +15,13 @@
 	font-weight: 400;
 }
 
+@font-face {
+	font-family: Jost;
+	src: url('../assets/font/Jost-VariableFont_wght.ttf');
+	font-weight: 400;
+}
+
+
 /************ Default Css ************/
 * {
   margin: 0;
@@ -285,7 +292,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: margin-left 0.3s ease-in-out;
 }
 
-.banner img {
+.banner img.animate-moved {
   animation: updown 3s linear infinite;
 }
 @keyframes updown {
@@ -622,4 +629,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .c-pointer {
   cursor: pointer;
+}
+.font-jost{
+  font-family: "Jost", sans-serif;
+}
+
+.border-card-c{
+  /* border: 1px solid var(--primary-color); */
+}
+
+.text-right{
+  text-align: right;
 }

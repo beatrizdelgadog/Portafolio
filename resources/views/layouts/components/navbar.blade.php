@@ -17,20 +17,21 @@
                 <li class="nav-item mx-0 mx-lg-1 text-white"><a class="py-3 px-0 px-lg-3 rounded"
                         href="#contact">Contacto</a></li>
             </ul>
+            <div class="social-icon">
+                <a target="_blank" class="" href="{{ config('myapp.links.github')}}">
+                    <i class="fab fa-fw fa-github"></i>
+                </a>
+                <a target="_blank" class="" href="{{ config('myapp.links.linkedin')}}">
+                    <i class="fab fa-fw fa-linkedin-in"></i>
+                </a>
+                <a target="_blank" class="" href="{{ config('myapp.links.twitter')}}">
+                    <i class="fab fa-fw fa-twitter"></i>
+                </a>
+                <a target="_blank" class="" href="{{ config('myapp.links.instagram')}}">
+                    <i class="fab fa-fw fa-instagram"></i>
+                </a>
+            </div>
         </div>
-        <div class="social-icon">
-            <a target="_blank" class="" href="{{ config('myapp.links.github')}}">
-                <i class="fab fa-fw fa-github"></i>
-            </a>
-            <a target="_blank" class="" href="{{ config('myapp.links.linkedin')}}">
-                <i class="fab fa-fw fa-linkedin-in"></i>
-            </a>
-            <a target="_blank" class="" href="{{ config('myapp.links.twitter')}}">
-                <i class="fab fa-fw fa-twitter"></i>
-            </a>
-            <a target="_blank" class="" href="{{ config('myapp.links.instagram')}}">
-                <i class="fab fa-fw fa-instagram"></i>
-            </a>
-        </div>
+        
     </div>
 </nav>

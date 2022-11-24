@@ -43,14 +43,14 @@
             <div class="row mt-5" style="border-bottom: 2px solid #fff">
                 <div class="p-0 text-left col-4 border-card-c">
                     {{-- <p class="text-center">Empecé</p> --}}
-                    <i style="margin-left: 10px" class="fa-solid fa-play"></i>
+                    <i style="font-size: 1.4em;margin-left: 10px" class="fa-solid fa-play"></i>
                     <p class="">{{ config('myapp.info.experience.start') }}</p>
                 </div>
                 <div class="p-0 col-4 border-card-c" style="transform: scaleX(-1);">
                     @include('layouts.components.others.dots')
                 </div>
                 <div class="p-0 col-4 border-card-c text-right">
-                    <i style="font-size: 2em; margin-right: 10px" class="fa-solid fa-flag-checkered"></i>
+                    <i style="font-size: 1.4em; margin-right: 10px" class="fa-solid fa-flag-checkered"></i>
                     <p class="text-right">{{ config('myapp.info.experience.end') }}</p>
                 </div>
             </div>

@@ -21,145 +21,21 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css?v=1.1" rel="stylesheet" />
         <link href="css/banner.css" rel="stylesheet" />
+        <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
     <body id="page-top">
+
+        @include('layouts.components.preloader')
         <!-- Navigation-->
         @include('layouts.components.navbar')
         
         <!-- Masthead-->
         {{-- Banner --}}
         @include('layouts.components.banner')
+        @include('layouts.components.skill')
        
-        <!-- About Section-->
-        <section class="page-section bg-primary" id="about" style="height: 100vh">
-            
-        <div class="feat bg-gray pt-5 pb-5">
-            <div class="container">
-            <div class="row">
-                <div class="section-head col-sm-12">
-                    <h4><span>Servi</span>cios <span>y Herramien</span>tas</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's<br>standard dummy text ever since the 1500s, when an unknown book.</p>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="item"> <span class="icon feature_box_col_two"><i class="fa-solid fa-list-check"></i></span>
-                        <h6>QA</h6>
-                        <p>Servicios como QA (Analista de calidad del software).</p>
-                        <h6>Herramientas</h6>
-                        <p>GitHub <br>GitLab</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-globe"></i></span>
-                        <h6>Desarrolladora</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
-                        <h6>Herramientas</h6>
-                        <p>PHP <br>JavaScript <br>Laravel</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="item"> <span class="icon feature_box_col_four"><i class="fa fa-database"></i></span>
-                        <h6>Business Growth</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
-                        <h6>Herramientas</h6>
-                        <p>MySQL Workbench <br>phpMyAdmin <br>Oracle SQL Developer</p>
-                    </div>
-                </div>
-                <!-- <div class="col-lg-4 col-sm-6">
-                <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-hourglass-half"></i></span>
-                    <h6>Your Photoshoping</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
-                </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                <div class="item"> <span class="icon feature_box_col_five"><i class="fa fa-upload"></i></span>
-                    <h6>Market Strategy</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
-                </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                <div class="item"> <span class="icon feature_box_col_six"><i class="fa fa-camera"></i></span>
-                    <h6>Retina Ready</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
-                </div>
-                </div> -->
-            </div>
-            </div>
-        </div>
-
-            <!-- <h1  class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile" style="color: #141c3a;">Herramientas</h1>
-            <br>
-            <h4>Lenguajes, Frameworks y Herramientas</h4><br>
-            <div class="flip">
-                <div class="front" style="background-image: url(https://www.alexmedina.net/wp-content/uploads/2019/12/javascript.png)">
-                <h1 class="text-shadow">JavaScript</hi>
-                </div>
-                <div class="back">
-                <h2>JavaScript</h2>
-                <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                </div>
-            </div>
-            <div class="flip">
-                <div class="front" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png)">
-                <h1 class="text-shadow">PHP</hi>
-                </div>
-                <div class="back">
-                <h2>PHP</h2>
-                <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="flip">
-                <div class="front" style="background-image: url(https://s3-eu-west-1.amazonaws.com/bucketeer-688d8e11-8fc6-459f-bb52-26fd21452913/2020/03/AcA2LnWL_400x400.jpg)">
-                <h1 class="text-shadow">Laravel</hi>
-                </div>
-                <div class="back">
-                <h2>Laravel</h2>
-                <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                </div>
-            </div>
-            <div class="flip">
-                <div class="front" style="background-image: url(https://inscripciones.utnso.com.ar/images/github-round.png)">
-                <h1 class="text-shadow">GitHub</hi>
-                </div>
-                <div class="back">
-                <h2>GitHub</h2>
-                <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                </div>
-            </div> -->
-
-            <!-- vertical -->
-            
-            <!-- <h4>Vertical Flip</h4>
-            <div class="flip flip-vertical">
-                <div class="front" style="background-image: url(https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-                <h1 class="text-shadow">FOREST</hi>
-                </div>
-                <div class="back">
-                <h2>Angular</h2>
-                <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                </div>
-            </div>
-            <div class="flip flip-vertical">
-                <div class="front" style="background-image: url(https://images.pexels.com/photos/34950/pexels-photo.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-                <h1 class="text-shadow">TRACK</hi>
-                </div>
-                <div class="back">
-                <h2>Angular</h2>
-                <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                </div>
-            </div>
-            <div class="flip flip-vertical">
-                <div class="front" style="background-image: url(https://images.pexels.com/photos/34546/sunset-lake-landscape-summer.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-                <h1 class="text-shadow">SWAMP</hi>
-                </div>
-                <div class="back">
-                <h2>Angular</h2>
-                <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                </div>
-            </div> -->
-        </section>
+        
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio" style="height: 100vh; background-color : white">
             <div class="feat bg-gray pt-5 pb-5">
@@ -392,7 +268,11 @@
         {{-- TEXT ROTATE --}}
         <script src="{{ asset('js/components/navbar.js')}}"></script>
         <script src="{{ asset('js/components/text-rotate.js')}}"></script>
-
+        <script>
+            $(document).ready(function(){
+                $("#preloader").fadeOut();
+            });
+        </script>
     </body>
 </html>
 

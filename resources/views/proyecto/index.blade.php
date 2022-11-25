@@ -51,10 +51,12 @@
                                             <td>{{ ++$i }}</td>
                                             
 											<td>{{ $proyecto->nombre }}</td>
-											<td>{{ $proyecto->imagen }}</td>
+											{{-- <td>{{ $proyecto->imagen }}</td> --}}
+											<td><a href="{{ $proyecto->imagen }}" target="_blank"><img src="{{ $proyecto->imagen }}" style="max-width: 100px" alt=""></a></td>
 											<td>{{ $proyecto->descripcion }}</td>
-											<td>{{ $proyecto->url }}</td>
-                                            <td>{{ $proyecto->imagensec }}</td>
+											<td><a href="{{ $proyecto->url }}" target="_blank">{{ $proyecto->url }}</a></td>
+											<td><a href="{{ $proyecto->imagensec }}" target="_blank"><img src="{{ $proyecto->imagensec }}" style="max-width: 100px" alt=""></a></td>
+                                            {{-- <td>{{ $proyecto->imagensec }}</td> --}}
 
                                             <td>
                                                 <form action="{{ route('proyectos.destroy',$proyecto->id) }}" method="POST">

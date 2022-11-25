@@ -26,7 +26,8 @@
                         </div>
                         <div class="form-group">
                             <strong>Imagen:</strong>
-                            {{ $proyecto->imagen }}
+                            {{-- {{ $proyecto->imagen }} --}}
+                            <img src="{{ $proyecto->imagen }}" style="max-width: 100px" alt="">
                         </div>
                         <div class="form-group">
                             <strong>Descripcion:</strong>
@@ -34,11 +35,12 @@
                         </div>
                         <div class="form-group">
                             <strong>Url:</strong>
-                            {{ $proyecto->url }}
+                            <a href="{{ $proyecto->url }}" target="_blank">{{ $proyecto->url }}</a>
                         </div>
                         <div class="form-group">
                             <strong>Imagen Modal:</strong>
-                            {{ $proyecto->imagensec }}
+                            <img src="{{ $proyecto->imagensec }}" style="max-width: 100px" alt="">
+                            {{-- {{ $proyecto->imagensec }} --}}
                         </div>
 
                     </div>

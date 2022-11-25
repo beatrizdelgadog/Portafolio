@@ -85,7 +85,8 @@
 }
 </style>
 @if (count($types_experience) > 0)
-    <section class="container" id="experience" style="min-height: 100vh">
+<div style="position: relative">
+    <section class="container " id="experience" style="min-height: 100vh">
         <div class="row">
             <div class="section-head col-12 mt-4">
                 <h3 class="text-center"></h3>
@@ -127,4 +128,7 @@
             </div>
         </div>
     </section>
+    <img class="background-image-left" src="{{ asset('assets/front/color-sharp.png')}}" alt="Image" />
+</div>
+
 @endif

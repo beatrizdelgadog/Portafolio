@@ -3,13 +3,10 @@
   box-shadow: 0 0 1px #fff;
 }
 
-html {
-  cursor: pointer;
-}
-
+/* 
 body {
   background: #000;
-}
+} */
 
 .dots {
   position: absolute;

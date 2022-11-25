@@ -315,12 +315,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 0 0 50px 0;
   position: relative;
 }
+
+
 .skill-bx {
   background: #151515;
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
   margin-top: -60px;
+}
+@media (min-width: 500px) {
+  .skill-bx {
+    padding: 60px 50px;
+  }
 }
 .skill h2 {
 	font-size: 45px;

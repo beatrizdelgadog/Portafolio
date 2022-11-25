@@ -1,5 +1,6 @@
 <?php
 return [
+    'version'   => '1.1.0',
     'links' => [
         'github'    => 'https://github.com/beatrizdelgadog',
         'linkedin'  => 'https://www.linkedin.com/in/beatriz-melanie-delgado-guerrero-3b057323a/',

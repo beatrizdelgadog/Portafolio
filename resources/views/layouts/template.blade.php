@@ -21,11 +21,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
         type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css?v=1.1" rel="stylesheet" />
-    <link href="css/banner.css" rel="stylesheet" />
+    <link href="css/styles.css?v={{ config('myapp.version')}}" rel="stylesheet" />
+    <link href="css/banner.css?v={{ config('myapp.version')}}" rel="stylesheet" />
     <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="{{ asset('css/runnng.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/runnng.css')}}?v={{ config('myapp.version')}}">
     {{-- <link rel="stylesheet" href="{{ asset('css/button-contact.css')}}"> --}}
 </head>
 

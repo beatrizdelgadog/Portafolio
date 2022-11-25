@@ -13,7 +13,7 @@ use App\Http\Controllers\ProyectoController;
 |
 */
 
-Route::get('/', [App\Http\Controllers\PortafolioController::class, 'index']);
+Route::get('/', [App\Http\Controllers\PortafolioController::class, 'index'])->name('front.index');
 
 Auth::routes();
 

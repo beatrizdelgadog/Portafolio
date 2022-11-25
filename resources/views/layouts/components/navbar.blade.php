@@ -10,10 +10,12 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item mx-0 mx-lg-1 text-white"><a class="py-3 px-0 px-lg-3 rounded"
                         href="#about">Herramientas</a></li>
+                {{-- <li class="nav-item mx-0 mx-lg-1 text-white"><a class="py-3 px-0 px-lg-3 rounded"
+                        href="#services">Servicios</a></li> --}}
                 <li class="nav-item mx-0 mx-lg-1 text-white"><a class="py-3 px-0 px-lg-3 rounded"
                         href="#portfolio">Proyectos</a></li>
                 <li class="nav-item mx-0 mx-lg-1 text-white"><a class="py-3 px-0 px-lg-3 rounded"
-                        href="#service">Servicios</a></li>
+                        href="#experience">Experiencia</a></li>
                 <li class="nav-item mx-0 mx-lg-1 text-white"><a class="py-3 px-0 px-lg-3 rounded"
                         href="#contact">Contacto</a></li>
             </ul>

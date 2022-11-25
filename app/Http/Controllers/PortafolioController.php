@@ -6,6 +6,7 @@ use App\Services\PortafolioService;
 use Illuminate\Http\Request;
 use App\Http\Requests\ContactRequest;
 use App\Mail\ContactMail;
+use App\Models\TypeExperience;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Swift_TransportException;
@@ -25,7 +26,11 @@ class PortafolioController extends Controller
     {
         $visit_id = visitPage();
         $proyectos = $this->portafolioService->getProyectos();
+
+        $types_experience = TypeExperience::where('status', 'active')->with('experiences')->get();
+
         return view('portfolio')
+            ->with('types_experience', $types_experience)
             ->with('proyectos', $proyectos);
     }
 

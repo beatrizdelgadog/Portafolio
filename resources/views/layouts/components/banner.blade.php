@@ -5,7 +5,7 @@
                 <div class="animate__animated animate__fadeIn">
                     <h1 style="font-size: 16px;">@lang('app.front.headers.hello') </h1>
                     <p style="font-size: 3em;font-weight: bold">
-                        <span>Soy </span> <span style="color: #21a67b;" class="txt-rotate" dataPeriod="1000"
+                        <span>Soy </span> <span style="color: #6FDCBF;" class="txt-rotate" dataPeriod="1000"
                             data-rotate='[ "Ingeniera en sistemas", "Dev Web", "Analista QA" ]'></span>
                     </p>
                     <p>Guayaquil, Ecuador <img style="width: 25px" src="{{ asset('assets/front/flag_of_ecuador.svg') }}"

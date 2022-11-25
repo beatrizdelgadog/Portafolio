@@ -647,3 +647,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .text-right{
   text-align: right;
 }
+
+.flex{
+  display: flex;
+} .flex-center{
+  justify-content: center;
+  align-self: center;
+}

@@ -98,6 +98,7 @@
     </footer>
     <!-- Portfolio Modals-->
 
+    @stack('scripts-cdn')
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
@@ -114,11 +115,14 @@
     <script src="{{ asset('js/components/text-rotate.js') }}"></script>
     <script src="{{ asset('js/components/easy-ajax.js') }}"></script>
     <script src="{{ asset('js/components/running.js') }}"></script>
+
+    @stack('scripts-local')
     <script>
         $(document).ready(function() {
             $("#preloader").fadeOut();
         });
     </script>
+    @stack('custom-scripts')
 </body>
 
 </html>

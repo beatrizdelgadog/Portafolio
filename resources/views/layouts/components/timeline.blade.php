@@ -95,7 +95,7 @@
         </div>
         <div class="row" >
             <div class="col-md-5 col-xl-4 d-none d-sm-block d-xl-block flex " style="">
-                @include('layouts.components.others.girl')
+              @include('layouts.components.others.girl')
             </div>
             <div class="col-12 col-md-7 col-xl-8">
                 <div class="row">
@@ -125,6 +125,10 @@
                         No hay datos                
                     @endforelse 
                 </div>
+            </div>
+            <div class="col-12 d-sm-block d-sm-none d-xl-none">
+              <img src="{{ asset('assets\front\me\girl-up.svg')}}" alt="">
+              {{-- @include('layouts.components.others.girl-show-up') --}}
             </div>
         </div>
     </section>

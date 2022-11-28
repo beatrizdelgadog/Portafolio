@@ -4,12 +4,13 @@
             <div class="col-md-6 col-12 col-xl-7">
                 <div class="animate__animated animate__fadeIn">
                     <h1 style="font-size: 16px;">@lang('app.front.headers.hello') </h1>
+                    {{-- NO SE MUESTRA ESTE CONTENIDO EN EL FRONT, PERO LLEVA EL H2 PARA LLEVAR EL ORDEN DE H1, H2, H3 ... H6 PARA EL SEO --}}
+                    <h2 class="d-none">Soy Analista QA y Desarrolladora web</h2>
                     <p style="font-size: 3em;font-weight: bold">
                         <span>Soy </span> <span style="color: #6FDCBF;" class="txt-rotate" dataPeriod="1000"
                             data-rotate='[ "Ingeniera en sistemas", "Dev Web", "Analista QA" ]'></span>
                     </p>
-                    <p>Guayaquil, Ecuador <img style="width: 25px" src="{{ asset('assets/front/flag_of_ecuador.svg') }}"
-                            alt=""></p>
+                    <p>Guayaquil, Ecuador <img style="width: 25px" src="{{ asset('assets/front/flag_of_ecuador.svg') }}" alt="Ecuador"></p>
                     <a class="button-a" href="#portfolio">¡Esto puede interesarte! <i
                             class="fa-solid fa-circle-arrow-down"></i></a>
                 </div>
@@ -17,8 +18,7 @@
             <div class="col-md-6 col-12 col-xl-5">
                 <div>
                     <div class="animate__animated animate__zoomIn">
-                        <img class="animate-moved" src="{{ asset('assets/img/banner-image.png') }}"
-                            alt="Banner Image" />
+                        <img class="animate-moved" src="{{ asset('assets/img/banner-image.png') }}" alt="Banner" />
                         {{-- <a href="https://www.freepik.es/vector-gratis/ilustracion-concepto-programacion_7118756.htm#from_view=detail_author">Imagen de storyset</a> en Freepik --}}
                     </div>
                 </div>

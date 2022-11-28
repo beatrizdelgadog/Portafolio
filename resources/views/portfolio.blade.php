@@ -15,8 +15,7 @@
                 <div class="row">
                     <div class="section-head col-sm-12 mb-2">
                         <h4><span>Proyec</span>tos</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has
-                            been the industry's<br>standard dummy text ever since the 1500s, when an unknown book.</p>
+                        <p>Te presento algunos de los proyectos en los cuales he participado para su desarrollo y testeo.</p>
                     </div>
                     <!-- Portfolio Grid Items-->
                     <div class="row justify-content-center">
@@ -40,15 +39,3 @@
     
 @endsection
 
-
-@push('scripts-cdn')
-    {{-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CustomEase3.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CustomWiggle3.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script> --}}
-    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
-@endpush
-
-
-@push('custom-scripts')
-    {{-- <script src="{{ asset('js/components/girl-design.js')}}"></script> --}}
-@endpush

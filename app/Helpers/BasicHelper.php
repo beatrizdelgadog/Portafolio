@@ -1,14 +1,7 @@
 <?php
 
 use App\Models\Views;
-use App\Repositories\ChannelPaymentRepository;
-use App\Repositories\PermissionRepository;
-use App\Repositories\RoleUserRepository;
-use App\Repositories\ViewsRepository;
-use Illuminate\Config\Repository;
-use Illuminate\Foundation\Application;
 use Illuminate\Support\Collection;
-use Mockery\Matcher\Any;
 use Illuminate\Support\Str;
 
 if (! function_exists('arrayToObject')) {

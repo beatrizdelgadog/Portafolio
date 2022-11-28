@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="Mi portafolio" />
+    <meta name="author" content="Beatriz DG" />
+    <meta name="keywords" content="Portafolio,Analista QA,Desarrolladora web">
     <title>Portafolio BMDG</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/BMDG.png" />

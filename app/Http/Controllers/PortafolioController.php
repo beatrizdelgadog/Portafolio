@@ -26,12 +26,14 @@ class PortafolioController extends Controller
     {
         $visit_id = visitPage();
         $proyectos = $this->portafolioService->getProyectos();
+        $skills = $this->portafolioService->getSkills();
 
         $types_experience = TypeExperience::where('status', 'active')->with('experiences')->get();
 
         return view('portfolio')
             ->with('types_experience', $types_experience)
-            ->with('proyectos', $proyectos);
+            ->with('proyectos', $proyectos)
+            ->with('skills', $skills);
     }
 
     /**
